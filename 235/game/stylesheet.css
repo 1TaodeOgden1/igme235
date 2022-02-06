@@ -1,0 +1,62 @@
+ h1 { 
+            color: #983628; 
+            font-family: sans-serif;
+            border-bottom: 1px solid blue;
+            font-family: 'Prompt', sans-serif;
+            }
+        blockquote { 
+            background-color: #8c93a8; 
+            padding: 1rem;
+            }
+        h2 {
+            color: blue; 
+            font-family: 'Prompt', sans-serif;
+        }
+        p,li {
+            color: lightgray; 
+            margin-left: 100px;
+        }
+        body {
+            background-image: url(images/digdugbkg.png); 
+            background-size: 10vw; 
+            background-color: #111d4a; 
+            background-repeat: repeat;
+            font-family: Arial, sans-serif;
+        }
+        footer{
+            background-color: #8c93a8; 
+        }
+
+        a:link{
+            color: #983628; 
+
+        }
+        a:visited{
+            color: darkslategray; 
+
+        }
+        a:focus{
+            color: white; 
+        }
+        a:hover{
+            color: red; 
+        }
+        a:active{
+            color: pink; 
+        }
+        header, footer,main{
+            background-color: #111d4a; 
+            border: 1px solid white; 
+            margin: 0 auto; 
+            width: 80vw; 
+        }
+        img{
+            /**code borrowed from: https://www.w3schools.com/howto/howto_css_image_center.asp**/ 
+            
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 10px; 
+            margin-bottom: 10px;
+        }

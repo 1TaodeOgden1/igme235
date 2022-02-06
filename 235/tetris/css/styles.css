@@ -1,0 +1,16 @@
+/* Do everything in this file */
+
+h2, h3 {
+    border-bottom: 3px solid red; 
+    clear: right; 
+}
+
+figure {
+    float: right; 
+
+}
+
+figure img {
+    width: 40vw; 
+    margin: 5px 5px; 
+}

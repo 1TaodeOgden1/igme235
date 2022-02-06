@@ -1,0 +1,12 @@
+
+body{
+    font-family: 'Bodoni Moda', serif;
+    background-color: #c1beba;
+}
+#preamble{
+    font-family: 'Cormorant', serif;
+}
+blockquote{
+    background-color: #e5e4e2;
+    padding: 1rem;
+}
