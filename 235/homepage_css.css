@@ -56,21 +56,21 @@ h1, h2, h3{
     
 }
 a:link{
-    color: #983628; 
+    color: #2BA84A; 
 
 }
 a:visited{
-    color: darkslategray; 
+    color: purple;
 
 }
 a:focus{
-    color: white; 
+    color: #FCFFFC; 
 }
 a:hover{
-    color: red; 
+    color: #2D2A3A; 
 }
 a:active{
-    color: pink; 
+    color: #040F0F;
 }
 
 /**

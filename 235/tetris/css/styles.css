@@ -6,11 +6,20 @@ h2, h3 {
 }
 
 figure {
-    float: right; 
+    float: right;
 
 }
 
 figure img {
     width: 40vw; 
     margin: 5px 5px; 
+}
+
+div::img{
+    float: left 10%;
+    border: 1px solid red; 
+}
+
+footer{
+    clear:both; 
 }
