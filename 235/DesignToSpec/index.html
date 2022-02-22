@@ -5,47 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trees & Wood</title>
-    <link rel  = "stylesheet" href = "stylesheet.css">;
+    <link rel = "stylesheet" href = "stylesheet.css">;
 </head>
-<body id = wrapper>
-    <!--Title & Name-->
-    <header>
-      <div id = "title">
-          <h1>Tress & Wood</h1>
-
-      </div>
-      <div id = "author">
-          <h1>IGME 235</h1>
-          <h1>Taode Ogden</h1>
-          
-      </div>
-    </header>
-    <!--Picture of oak tree + article -->
-    <div id = "oak_tree">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum quos corporis maxime dolor officia incidunt non minima unde laborum tempore beatae, adipisci placeat eaque neque ad nihil, fugiat iure at.</p>
-
-        <img src = "DesignToSpecAssets/Assets/oaktree.png" alt = "a picture of an oak tree in Minecraft">
-
-    </div>
+<body>
+            <!--Title & Name-->
+            <header>
+                <div id = "title">
+                   <h1>Trees & Wood</h1>
+                <!--SVG-->
+               </div>
+               <img src = "DesignToSpecAssets/Assets/axe_svg.svg" alt = "An SVG of an axe in Minecraft" id = "svg">
+               <div id = "author">
+                   <h1>IGME 235 <br>Taode Ogden</h1>
+               </div>
+           </header>
+                
+            <!--Picture of oak tree + article -->
+                  <div id = "tree-wrapper">
+                     <p class = "article">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae et similique eveniet nostrum voluptatum laboriosam. Temporibus similique magnam quis. Quae, modi animi possimus autem commodi, deserunt, ratione distinctio aperiam fuga ipsum molestiae omnis explicabo facilis cum soluta quas sit quaerat minus impedit optio. <br> Laborum quae veniam eaque deleniti non odit ducimus dolor rem soluta minima dolorem, eligendi in alias aperiam quisquam iure quis illum recusandae est corrupti, animi laboriosam, sint corporis. Enim deleniti accusantium quam ipsam ea tenetur quia veritatis amet quaerat tempore, libero repudiandae ipsa incidunt? Perferendis nisi reiciendis exercitationem quibusdam, eligendi non amet incidunt at, temporibus assumenda repellat?</p>
+       
+                    <img src = "DesignToSpecAssets/Assets/oaktree.png" alt = "a picture of an oak tree in Minecraft" class = "picture">
+                  </div>
+        
     <!--screenwide banner of valley-->
-    <div id = "banner">
-        <img src = "DesignToSpecAssets/Assets/valley.jpg" alt = "a gorgeous wooded valley in Minecraft">
+    <img src = "DesignToSpecAssets/Assets/valley.jpg" alt = "a gorgeous valley in Minecraft" id = "banner">
 
-    </div>
     <!--8 content boxes; 4 images, 4 articles-->
     <main>
-
+        <div id = "content_wrapper">
+            <ul id = content_boxes>
+                <li>
+                    <img src = "DesignToSpecAssets/Assets/planks.png" alt = "a plank block from Minecraft." class = "picture">
+                </li>
+                <li>
+                    <p class = "article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellat deserunt vitae alias qui laboriosam tenetur exercitationem maxime assumenda voluptates tempora, in cupiditate perspiciatis quibusdam illo quos quae earum saepe?</p>
+                </li>
+                <li>
+                    <img src = "DesignToSpecAssets/Assets/stick.png" alt = "a stick sprite from Minecraft" class = "picture">
+                </li>
+                <li>
+                    <p class = "article">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit animi tempore saepe temporibus, aspernatur officia doloremque delectus veritatis sit, ab adipisci iure ea illum corrupti! Aliquid, maiores ab. Perferendis, ut.</p>
+                </li>
+                <li>
+                    <img src = "DesignToSpecAssets/Assets/chest.png" alt = "The chest block from Minecraft" class = "picture">
+                </li>
+                <li>
+                    <p class = "article">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit animi tempore saepe temporibus, aspernatur officia doloremque delectus veritatis sit, ab adipisci iure ea illum corrupti! Aliquid, maiores ab. Perferendis, ut.</p>
+                </li>
+                <li>
+                    <img src = "DesignToSpecAssets/Assets/stairs.png" alt = "The stairs block from Minecraft." class = "picture">
+                </li>
+                    <p class = "article">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae eligendi non, voluptatibus eaque totam quos, rerum ipsa, nemo cupiditate pariatur sed corrupti laborum natus voluptatum nobis aperiam! Laudantium, dolore suscipit.</p>
+                
+            </ul>
+            
+        </div>
     </main>
     <!--Sources, credits-->
     <footer>
-        <h2>These are pretty cool, right?</h2>
-
-        <div id = "--Sources">
-            <h2>Copyright 2022</h2>
-            <h2>RIT School of Interactive Games and Media</h2>
-        </div>
-        
-
+        <h2 id = "footerText">Trees are pretty cool, right?</h2>
+        <h2 id = "Copyright">Copyright 2022 <br>RIT School of Interactive Games & Media</h2>
     </footer>
 </body>
 </html>
