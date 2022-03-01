@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>DOM-3</title>
+	<style>
+		body{border:1px solid gray;}
+		p b{transform: rotate(20deg)}
+	</style>
+</head>
+<body>
+<h1 id = "title">My Page</h1>
+<h2 id = "info">Info</h2>
+<h2 id = "pictures">Pictures</h2>
+<h2 id = "infoMore">More Info</h2>
+<p>Blah <b>Blah</b> Blah</p>
+<p id = "link">Blah <b>Blah</b> Blah</p>
+<p id="lastParagraph">Blah <b>Blah</b> Blah</p>
+<footer>Copyright &copy; <b>20XX</b></footer>
+<script>
+	"use strict"; 
+
+    document.querySelector("#title").innerHTML = "My UFO Page";
+    
+    document.querySelector("#info").innerHTML = "My UFO Info";
+    
+    document.querySelector("#pictures").innerHTML = "My UFO Pictures";
+    
+    document.querySelector("#infoMore").innerHTML = "";
+
+    let body = document.querySelector("body");
+
+    document.body.style.fontFamily = "sans-serif"; 
+    document.body.style.color = "#d1461b";
+
+    let firstPara = document.querySelector("p"); 
+
+	firstPara.innerHTML = "Post your UFO Sightings here:"; 
+
+	</script>
+</body>
+</html>
