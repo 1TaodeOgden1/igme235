@@ -15,44 +15,46 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@300&display=swap" rel="stylesheet">
 
-    <link rel = "stylesheet" href = "css/myStyle.css">
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    
+    <!--Stylesheet-->
+    <link rel = "stylesheet" href ="css/myStyleFinal.css">
+
 </head>
-<body>
+<body id = "start">
     <!--Just the navbar and the landing site-->
+    <nav>
+        <a href = "#start">HOME</a>
+        <a href = "#bio">ABOUT ME</a>
+        <a href = "#gallery">PROJECTS</a>
+        <a href = "#contacts">FOLLOW ME</a>
+    </nav>
+    
     <header>
-        <div id = "navbar">
-            <a href = "#landing">HOME</a>
-            <a href = "#bio">ABOUT ME</a>
-            <a href = "#gallery">PROJECTS</a>
-            <a href = "#contacts">FOLLOW ME</a>
-        </div>
-
         <div id = landing>
           <h1>Taode Ogden</h1>
           <h2>Aspiring Game Designer & Storyteller</h2>
         </div>
 
     </header>
-    <!--includes the landing, bio, and gallery-->
+    <!--includes the bio and gallery-->
     <main>
         <div id = "bio">
             
+            <h1 class = "sectionHeader">ABOUT ME</h1>
+            
             <div class = "article">
-                <h1 class = "sectionHeader">ABOUT ME</h1>
 
                 <p><strong>Hello!</strong> I'm a learning game designer on my second year at the Rochester Institute of Technology, with a particular for the narrative side of games. I grew up playing RPGs like Skyrim, Final Fantasy, and Xenoblade Chronicles, and their worlds & characters have always been the most enamoring aspects for me. When I'm not working on my latest projects, I am practicing my cooking, in the midst of a Dungeons & Dragons session, or stuck in a book. </p>
-                
 
+                <img src = "media/selfie.jpg" alt = "A portrait of myself">
             </div>
-            <img src = "media/selfie.jpg" alt = "A portrait of myself">
         </div>
 
         <div id = "gallery">
-            <div class = "long_article">
-                <h1 class = "sectionHeader">My PROJECTS </h1>
-            </div>
+            <h1 class = "sectionHeader">My PROJECTS </h1>
+
             <ul id = "projectList">
                 <li>
                     <div class = "article">      
@@ -80,24 +82,24 @@
                     <img src = "media/placeholder.png" alt = "project spotlight image">
                 </li>
                 <!--Simply add more items as I get projects done-->
+
+
             </ul>
         </div>
-        <div id = "contacts">
-            <!--contact info, etc.-->
-            <h1 class = "sectionHeader">Want to follow me?</h1>
-            <div class = "article">
-                <ul>
-                    <li><p>Email: tto5826@rit.edu</p></li>
-                    <li><p><a href = "https://github.com/1TaodeOgden1/igme235" target = "_BLANK">235 Repository</a></p></li>
-                </ul>
-            </div>
-        </div>
-
     </main>
     <footer>
-        <h2>footer stuff</h2>
+        <div id = "contacts">
+            <!--contact info, etc.-->
+            <h1>FOLLOW ME</h1>
 
-    </footer>
+                <ul class="fa-ul">
+                    <li><span class="fa-li"><i class="fa-solid fa-envelope fa-xl"></i></span><a href = "mailto:tto5826@rit.edu" target = "_BLANK"> tto5826@rit.edu</a></li>
+                    <li><span class="fa-li"><i class="fa-brands fa-github fa-xl"></i></span><a href = "https://github.com/1TaodeOgden1/igme235" target = "_BLANK"> GitHub</a></li>
+                    <li><span class="fa-li"><i class="fa-brands fa-linkedin fa-xl"></i></span><a href = "https://www.linkedin.com/in/taode-ogden/" target = "_BLANK"> LinkedIn</a></li>
+                    <li><span class="fa-li"><i class="fa-solid fa-file-pdf fa-xl"></i></span><a href = "media/Resume_TaodeOgden.pdf" target = "_BLANK"> Resume</a></li>
+                </ul>
+           
+        </div>
     </footer>
 </body>
 </html>

@@ -1,0 +1,296 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #E4E5DE;
+    margin: 0; 
+}
+h1 {
+    text-align: center;
+    padding-top: auto;
+    padding-bottom: auto;
+}
+
+/**main sections of the site**/ 
+header {
+    height: 100vh; 
+    display: grid; 
+    grid-template-areas: "landing  landing landing";
+    grid-template-rows: 100vh;
+    width: 100vw;
+    background-image: url(../media/placeholder.png);
+    background-size: cover;
+}
+
+nav {
+    position: sticky; 
+    top: 0;
+    background-color: #6F7948;
+    display: flex; 
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'monofontoregular';
+    font-size: 1.5rem;
+    margin: 1% 2%;
+    color: white;
+    
+}
+
+nav a:visited {
+    color: white;
+}
+
+nav a:hover {
+    color: #2ba84a;
+}
+
+#landing{
+    grid-area: landing; 
+    margin: auto;
+    width: 50%;
+    padding: auto;
+    text-align: center; 
+}
+
+h1, h2{
+    font-family: 'Castoro', serif;
+}
+
+#landing h1{
+    font-size: 3rem; 
+}
+
+#landing h2{
+    font-size: 2rem;
+}
+
+
+#bio {
+    grid-area: bio; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: auto 8%;
+    text-align: center;
+}
+
+#bio * {
+    margin: 1rem;
+}
+
+#bio img {
+    max-width: 50%;
+}
+
+
+#bio .article {
+    max-width: 80%;
+}
+
+/**Padding to keep only header at top of flex container**/
+#bio h1 {
+    padding: 0 30%;
+}
+
+
+strong {
+    color: #d8cfaf;
+    font-size: 2rem;
+}
+
+p {
+    color: #B9C3CB;
+    font-family: 'Roboto Serif', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+main {
+    display: grid; 
+    grid-template-areas: "leftBar bio         rightBar"
+                         "leftBar gallery     rightBar";
+    grid-template-columns: 8% auto 8%; 
+    grid-template-rows: auto auto;
+
+}
+
+footer {
+    background-color: #6e542a; /**NEEDS A BETTER CONTRASTING COLOR**/
+    display: flex; 
+    justify-content: space-between;
+}
+
+/** The subsections of main **/ 
+
+.article {
+    border-radius: 4%;
+    border: 5px solid black;
+    background-color: #45535E;
+}
+
+.article h2 {
+    text-align: end;
+}
+.article h2, p {
+    margin: 5%;
+}
+
+img {
+    border-radius: 4%;
+    border: 5px solid black;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#gallery {
+    grid-area: gallery; 
+    display: flex;
+    flex-direction: column; 
+}
+
+ul {
+    padding: 0;
+    list-style-type: none; 
+}
+
+
+#projectList li {
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly; 
+    flex-direction: row-reverse;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    margin: 2% auto;
+}
+
+li img {
+    max-width: 45%;
+    min-width: 40%;
+    margin: 1rem;
+}
+
+li .article {
+    max-width: 45%;
+    min-width: 40%;
+    margin: 1rem;
+}
+
+/**center the contacts section*/
+#contacts {
+    margin: 0 auto;
+}
+
+#contacts p {
+    color: black;
+    padding: 0 5rem;
+}
+
+#contacts ul {
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: baseline;
+    align-content: space-between;
+    justify-content: space-evenly;
+}
+
+
+#contacts ul>li {
+    font-family: 'Castoro', serif;
+    font-size: 1.2rem;
+    margin: 3% 2rem;
+}
+
+/**FontAwesome icon color**/ 
+
+.fa-li {
+    text-decoration: none;
+    color: white;
+}
+
+/**link psuedoclasses**/
+a:link {
+    color: #6f91ab;    
+}
+
+a:visited {
+    color: #8A9BA8;
+}
+
+a:focus {
+    color: #8A9BA8;
+}
+
+a:hover {
+    color: #2ba84a;
+}
+
+a:active {
+    color: #b53026;
+}
+
+/**Mobile exclusive layout**/
+@media  screen and (max-width: 1050px) {
+
+
+    #bio {
+        margin: 2% auto;
+    }
+    #bio .article {
+        max-width: 100%;
+    }
+    li img {
+        max-width: 100%;
+    }
+    
+    li .article {
+        max-width: 100%;
+    }
+
+    nav a {
+        text-decoration: none;
+        font-family: 'monofontoregular';
+        font-size: 1.5rem;
+        margin: 2%;
+        color: white;
+        text-align: center;
+        
+    }
+
+    #landing h1{
+        font-size: 3rem;
+    }
+    
+    #landing h2{
+        font-size: 1.5rem;
+    }
+    
+    strong {
+        color: #d8cfaf;
+        font-size: 1.5rem;
+    }
+    
+    p {
+        color: #B9C3CB;
+        font-family: 'Roboto Serif', sans-serif;
+        font-size: 1.3rem;
+    }
+
+  }
+
+@font-face {
+    font-family: 'monofontoregular';
+    src: url('../media/extracted_fonts/monofonto-webfont.woff2') format('woff2'),
+         url('../media/extracted_fonts/monofonto-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+} 
+/*For visualizing layouts**/ 
+/** {
+    border: 1px solid red;
+}

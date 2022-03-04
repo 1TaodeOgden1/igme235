@@ -51,14 +51,17 @@ p{
     
 }
 
+
+
 h1, h2, h3{
     font-family: 'Josefin Slab', serif;
     
 }
 a:link{
     color: #2BA84A; 
-
 }
+
+
 a:visited{
     color: purple;
 }
